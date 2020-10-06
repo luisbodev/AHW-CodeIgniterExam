@@ -33,7 +33,7 @@ class proveedor_model extends CI_Model{
      
     public function mod($id_proveedor,$modificar="NULL",$nombre="NULL",$apellido="NULL",$telefono="NULL",$direccion="NULL"){
         if($modificar=="NULL"){
-            $consulta=$this->db->query("SELECT * FROM proveedot WHERE id_proveedot=$id_proveedor");
+            $consulta=$this->db->query("SELECT * FROM proveedor WHERE id_proveedot=$id_proveedor");
             return $consulta->result();
         }else{
           $consulta=$this->db->query("
