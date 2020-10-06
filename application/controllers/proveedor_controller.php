@@ -32,6 +32,8 @@ class Proveedor_controller extends CI_Controller{
      
     //controlador para añadir
     public function add(){
+        print_r("HOLA");
+        return;
          
         //compruebo si se a enviado submit
         if($this->input->post("submit")){
@@ -54,23 +56,13 @@ class Proveedor_controller extends CI_Controller{
         //redirecciono la pagina a la url por defecto
         redirect(base_url("proveedor_controller/"));
     }
-     
-
-
-
-
-
-
-
-
-
-
 
     //controlador para modificar al que
     
     //le paso por la url un parametro
     public function mod($id_proveedor){
         if(is_numeric($id_proveedor)){
+        $titulo="Proveedor";
           $datos["mod"]=$this->proveedor_model->mod($id_proveedor);
           $this->load->view("proveedor/modificar_view",$datos);
           $this->load->view("plantillas/cabecera",$titulo);

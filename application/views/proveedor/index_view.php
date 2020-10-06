@@ -62,8 +62,8 @@
                 <?=$fila->direccion;?>
             </td>
             <td>
-                <a href="<?=base_url("direccion_controller/mod/$fila->id_proveedor")?>" class="btn btn-primary">Modificar</a>
-                <a href="<?=base_url("direccion_controller/eliminar/$fila->id_proveedor")?>" class="btn btn-success">Eliminar</a>
+                <a href="<?=base_url("proveedor_controller/mod/$fila->id_proveedor")?>" class="btn btn-primary">Modificar</a>
+                <a href="<?=base_url("proveedor_controller/eliminar/$fila->id_proveedor")?>" class="btn btn-success">Eliminar</a>
             </td>
         </tr>
     <?php
