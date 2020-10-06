@@ -91,10 +91,10 @@ class Proveedor_controller extends CI_Controller{
                 }else{
                     $this->session->set_flashdata('incorrecto', 'Proveedor modificado incorrectamente');
                 }
-                redirect(base_url());
+                redirect(base_url("proveedor_controller/"));
             }
         }else{
-            redirect(base_url());
+            redirect(base_url("proveedor_controller/"));
         }
     }
      
@@ -107,9 +107,9 @@ class Proveedor_controller extends CI_Controller{
           }else{
               $this->session->set_flashdata('incorrecto', 'proveedor eliminado incorrectamente');
           }
-          redirect(base_url());
+          redirect(base_url("proveedor_controller/"));
         }else{
-          redirect(base_url());
+            redirect(base_url("proveedor_controller/"));
         }
     }
 }
