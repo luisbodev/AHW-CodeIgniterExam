@@ -19,13 +19,9 @@ class proveedor_model extends CI_Model{
      
     public function add($nombre,$apellido,$telefono,$direccion){
         
-        if($consulta->num_rows()==0){
-            $consulta=$this->db->query("INSERT INTO proveedor VALUES(NULL,'$nombre','$apellido','$telefono','$direccion');");
-            if($consulta==true){
-              return true;
-            }else{
-                return false;
-            }
+        $consulta=$this->db->query("INSERT INTO proveedor VALUES(NULL,'$nombre','$apellido','$telefono','$direccion');");
+        if($consulta==true){
+            return true;
         }else{
             return false;
         }

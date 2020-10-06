@@ -1,14 +1,15 @@
     <center>
         <h1>Proveedores</h1>
-        <?php
-        //Si existen las sesiones flasdata que se muestren
-            if($this->session->flashdata('correcto'))
-                // echo $this->session->flashdata('correcto');
-                echo "<div class='alert alert-primary' role='alert'>$this->session->flashdata('correcto')</div>";
-             
-            if($this->session->flashdata('incorrecto'))
-                echo "<div class='alert alert-danger' role='alert'>$this->session->flashdata('incorrecto')</div>";
-        ?>
+        <div class="container">
+            <?php
+            //Si existen las sesiones flasdata que se muestren
+                if($this->session->flashdata('correcto'))
+                    echo "<div class='alert alert-primary' role='alert'>".$this->session->flashdata('correcto')."</div>";
+                
+                if($this->session->flashdata('incorrecto'))
+                    echo "<div class='alert alert-danger' role='alert'>".$this->session->flashdata('incorrecto')."</div>";
+            ?>
+        </div>
 <table class="table">
   <thead>
     <tr>
