@@ -52,7 +52,7 @@ class Proveedor_controller extends CI_Controller{
         }
          
         //redirecciono la pagina a la url por defecto
-        redirect(base_url());
+        redirect(base_url("proveedor_controller/"));
     }
      
 
