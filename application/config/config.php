@@ -23,11 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-<<<<<<< HEAD
-$config['base_url'] = 'http://examen.test/';
-=======
 $config['base_url'] = 'https://127.0.0.1/AHW-CodeIgniterExam/';
->>>>>>> 7c0284e2d9d9eea030329c991c3dceebc48d11d1
 
 /*
 |--------------------------------------------------------------------------
