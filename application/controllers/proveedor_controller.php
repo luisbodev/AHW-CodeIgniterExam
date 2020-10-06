@@ -22,10 +22,11 @@ class Proveedor_controller extends CI_Controller{
         //del modelo
         $proveedor["ver"]=$this->proveedor_model->ver();
          
-        //cargo la vista y le paso los datos
-        $this->load->view("proveedor_view",$proveedor);
+        $titulo="Proveedor";
         //cargo la cabecera y el pie de página
         $this->load->view("plantillas/cabecera",$titulo);
+        //cargo la vista y le paso los datos
+        $this->load->view("proveedor/index_view",$proveedor);
         $this->load->view("plantillas/pie");
     }
      
@@ -64,7 +65,7 @@ class Proveedor_controller extends CI_Controller{
 
 
 
-    
+
     //controlador para modificar al que
     
     //le paso por la url un parametro
